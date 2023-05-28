@@ -6,7 +6,7 @@
 /*   By: apaghera <apaghera@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/29 12:10:33 by apaghera          #+#    #+#             */
-/*   Updated: 2023/05/27 17:02:35 by apaghera         ###   ########.fr       */
+/*   Updated: 2023/05/28 14:51:38 by apaghera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -103,4 +103,5 @@ void	init_all(t_table *table)
 	pthread_mutex_destroy(&table->mil_mut);
 	pthread_mutex_destroy(&table->max_eat);
 	free(table->customer);
+	free(table->dead);
 }
