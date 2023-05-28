@@ -6,7 +6,7 @@
 /*   By: apaghera <apaghera@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 21:34:10 by apaghera          #+#    #+#             */
-/*   Updated: 2023/05/27 21:54:59 by apaghera         ###   ########.fr       */
+/*   Updated: 2023/05/28 13:54:48 by apaghera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,8 @@ int	ft_atoi(char *s)
 		s++;
 	}
 	if (*s >= 9)
+		return (-1);
+	if (res < 0)
 		return (-1);
 	return (res);
 }
